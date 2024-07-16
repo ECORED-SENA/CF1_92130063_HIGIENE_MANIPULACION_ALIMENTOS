@@ -6,8 +6,9 @@
 
     .row.justify-content-center
       .col-lg-10.mb-5
-        figure
-          img(src="@/assets/curso/temas/sintesis.svg", alt="alt")
+        .fondo-color-sistema-h.borde-20.p-3
+          figure
+            img(src="@/assets/curso/temas/sintesis.svg", alt="Síntesis de componente formativo  que presenta una clasificación de los alimentos según su origen orgánicos e inorgánicos y función constructores, energéticos y reguladores, su manipulación adulterado, alterado, contaminado, alto riesgo y perecedero, y los tipos de contaminación física, química, biológica y cruzada.")
       .col-auto
         a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
           .anexo__icono

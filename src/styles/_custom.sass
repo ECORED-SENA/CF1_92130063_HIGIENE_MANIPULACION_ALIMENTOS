@@ -2,13 +2,18 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 13%
+    left: 10%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    top: 15%
+    right: 20%
+  &-3
+    animation: float1 3s ease-in-out infinite alternate
+    position: absolute
+    bottom: 12%
+    right: 25%
 
 
 @keyframes float1
@@ -18,3 +23,21 @@
   100%
     transform: translateY(0px)
 
+//Banners
+.banner-principal__img
+  img
+    max-width: 407px
+.banner-principal .tarjeta
+  background-position: inherit
+  @media screen and (max-width: $bp-max-md)
+    background-image: url(../assets/curso/portada/fondo-banner-principal-md.png) !important
+  @media screen and (max-width: $bp-max-xs)
+    background-image: url(../assets/curso/portada/fondo-banner-principal-movil.png) !important
+
+//colores
+.fondo-color-sistema-h
+  background-color: $color-sistema-h
+
+//bordes
+.borde-20
+  border-radius: 20px

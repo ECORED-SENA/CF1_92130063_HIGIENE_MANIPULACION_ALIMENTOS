@@ -1,8 +1,9 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
+    componenteFormativo: 'Clasificación y contaminación de alimentos',
+    descripcionCurso:
+      'El componente aborda sobre la importancia de los alimentos para el cuerpo humano, su clasificación según el origen y función, y aspectos clave sobre la manipulación y seguridad alimentaria. Destaca la clasificación de los alimentos en constructores, energéticos y reguladores, y detalla los tipos de contaminación que pueden afectarlos. También proporciona consejos para la correcta selección y almacenamiento de alimentos para evitar riesgos de salud.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
@@ -12,6 +13,10 @@ export default {
       {
         clases: ['banner-principal-decorativo-2'],
         imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+      },
+      {
+        clases: ['banner-principal-decorativo-3'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-3.svg'),
       },
     ],
   },
@@ -31,28 +36,25 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Los alimentos',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
+            titulo: 'Conceptos clave',
             hash: 't_1_1',
           },
+          {
+            numero: '1.2',
+            titulo: 'Tipos de contaminación en alimentos',
+            hash: 't_1_2',
+          },
+          {
+            numero: '1.3',
+            titulo: 'Selección de alimentos frescos y de calidad',
+            hash: 't_1_3',
+          },
         ],
-      },
-
-      {
-        nombreRuta: 'tema2',
-        numero: '2',
-        titulo: 'Titulo de primer nivel',
-        desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'tema3',
-        numero: '3',
-        titulo: 'Titulo de primer nivel',
-        desarrolloContenidos: true,
       },
     ],
     subMenu: [
@@ -102,31 +104,120 @@ export default {
   },
   complementario: [
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
+      tema: 'Los alimentos',
+      referencia:
+        'Alimentos Cloud (s.f.). Contaminación alimentaria: causas y prevención. Curso de Manipulador de Alimentos. [Podcast]. YouTube.',
+      tipo: 'Podcast',
+      link: 'https://music.youtube.com/watch?v=5aKkZWhlOHA&feature=shared',
     },
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tema: 'Tipos de contaminación en alimentos',
+      referencia:
+        'Fundación Aprende con Reyhan (2020). Contaminación cruzada. [Archivo de video] Youtube.',
+      tipo: 'Video',
+      link: 'https://youtu.be/L-cdpFWRG2o?feature=shared',
+    },
+    {
+      tema: 'Selección de alimentos frescos y de calidad',
+      referencia:
+        'Converxus (2023). Clasificación de Calidad en los alimentos [Archivo de video] Youtube.',
+      tipo: 'Video',
+      link: 'https://youtu.be/1tjszZPcYHI?feature=shared',
+    },
+    {
+      tema: 'Selección de alimentos frescos y de calidad',
+      referencia:
+        'Mathias-Rettig, K., & Ah-Hen, K. (2014). El color en los alimentos un criterio de calidad medible. Agro Sur, 42(2), 57-66.',
+      tipo: 'Artículo',
+      link: 'http://revistas.uach.cl/pdf/agrosur/v42n2/art07.pdf',
+    },
+    {
+      tema: 'Selección de alimentos frescos y de calidad',
+      referencia:
+        'ONU. (2012). Sistemas de calidad e inocuidad de los alimentos - manual de capacitación. Capítulo 1: ( ed.). D - FAO.',
+      tipo: 'Manual',
+      link:
+        'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/66056',
     },
   ],
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Texto de la definición',
+      termino: 'Alimento',
+      significado:
+        'es todo producto que aporta al organismo determinados nutrientes que ayudan en los procesos metabólicos y las funciones fisiológicas.',
     },
     {
-      termino: '<em>Término con extranjerismo</em>',
-      significado: 'Definición',
+      termino: 'Conservar un alimento',
+      significado:
+        'significa protegerlo de la acción de los agentes físicos, biológicos y químicos por medio de diversos procesos, de tal manera que preserven al máximo sus propiedades nutritivas y cualidades organolépticas, permitiendo así su almacenamiento y consumo durante periodos prolongados.',
+    },
+    {
+      termino: 'Contaminación',
+      significado:
+        'la contaminación se puede dar por agentes físicos, químicos y biológicos, que son introducidos a un medio de manera natural o en algunos casos son ocasionados por el hombre.',
+    },
+    {
+      termino: 'Descomposición',
+      significado:
+        'este factor se da cuando los alimentos inician su proceso de descomposición, esto se puede detectar cuando la comida presenta cambios en sus condiciones organolépticas como: color, olor, sabor y textura, si estos cambios son identificados se puede evitar su consumo.',
+    },
+    {
+      termino: 'ETA',
+      significado: 'Enfermedades Transmitidas por Alimentos.',
+    },
+    {
+      termino: 'Inocuidad de los alimentos',
+      significado:
+        'es la garantía de que un alimento se encuentra libre de agentes contaminantes que pueden causar daños a la salud de los consumidores.',
+    },
+    {
+      termino: 'Instalaciones',
+      significado:
+        'son las locaciones o infraestructuras en la cuales se manipulan materias primas o productos terminados.',
+    },
+    {
+      termino: 'Limpieza',
+      significado:
+        'eliminación de impurezas tales como: tierra, grasas, desechos de alimentos, entre otros.',
+    },
+    {
+      termino: 'Manipulador de alimentos',
+      significado:
+        'son todas las personas que de alguna manera están relacionadas con la transformación de un alimento.',
     },
   ],
   referencias: [
     {
-      referencia: '',
+      referencia:
+        'Bravo, F. (2004). Manejo higiénico de los alimentos. México: Limusa.',
+      link: '',
+    },
+    {
+      referencia:
+        'Cuarental, A. S., Hurtado, M. C., & Pascual, V. C. (2022). Límites máximos de residuos y contaminantes en alimentos: bases de datos.',
+      link:
+        'https://www.grupoacms.com/pdfs/Limites-maximos-de-residuos-y-contaminantes-alimentos.pdf',
+    },
+    {
+      referencia:
+        'Martínez-Martínez, L., & Valdivia-Flores, A. G. (2023). Contaminación de alimento comercial seco para perro por Aspergillus flavus y aflatoxinas en Aguascalientes, México. <em>Revista mexicana de ciencias pecuarias</em>, 14(4), 796-806. Recuperado de',
+      link:
+        'https://www.scielo.org.mx/scielo.php?pid=S2007-11242023000400796&script=sci_arttext',
+    },
+    {
+      referencia:
+        'Rueda, K., Trujillo, J. E., Carranza, J. C., & Vallejo, G. A. (2014). Transmisión oral de Trypanosoma cruzi: una nueva situación epidemiológica de la enfermedad de Chagas en Colombia y otros países suramericanos. <em>Biomédica</em>, 34(4), 632-645.',
+      link:
+        'http://www.scielo.org.co/scielo.php?pid=S0120-41572014000400017&script=sci_arttext',
+    },
+    {
+      referencia:
+        'Torres Segarra, S. M., & Pacheco Cárdenas, K. E. (2021). Staphylococcus aureus resistentes a meticilina en alimentos. <em>Vive Revista de Salud</em>, 1(3), 23-33. Recuperado de',
+      link:
+        'http://www.scielo.org.bo/scielo.php?pid=S2664-32432021000300023&script=sci_arttext',
+    },
+    {
+      referencia: 'Villanque, B. Los Alimentos. Ciencia y ambiente.',
       link: '',
     },
   ],
