@@ -34,10 +34,126 @@
   @media screen and (max-width: $bp-max-xs)
     background-image: url(../assets/curso/portada/fondo-banner-principal-movil.png) !important
 
+.banner-interno
+  height: 150px
+  .banner-interno__fondo
+    background-color: $color-sistema-g
+    background-position: right
+    background-image: url(../assets/curso/fondo_tema.png) !important
+
+//titulos
+.titulo-decorativo
+  position: relative
+  display: inline-flex
+  align-items: center
+  &::before
+    content: ""
+    position: absolute
+    background-color: #DCC366
+    top: 8px
+    bottom: 7px
+    left: 10px
+    right: 0
+    z-index: 0
+    border-radius: 30px
+  .cont-text 
+    position: relative
+    h3
+      margin: 0
+      padding: 0.5rem 0 
+      margin-left: 0.5rem
+      margin-right: 1.5rem
+      @media screen and (max-width: $bp-max-xs)
+        margin-right: 0.5rem
+        padding: 1rem 0
+
+  .cont-figura
+    position: relative
+    display: inline-flex
+    border-radius: 50%
+    width: 51px
+    height: 51px
+    min-width: 51px
+    min-height: 51px
+    justify-content: center
+    align-items: center
+    align-content: center
+    background-color: #F1E7C2
+    img
+      max-width: 23px
+      padding-bottom: 0.3rem
+  
 //colores
 .fondo-color-sistema-h
   background-color: $color-sistema-h
+.fondo-color-sistema-i
+  background-color: $color-sistema-i
+.fondo-color-sistema-j
+  background-color: $color-sistema-j
+.fondo-color-sistema-k
+  background-color: $color-sistema-k
+.fondo-color-sistema-l
+  background-color: $color-sistema-l
+.fondo-color-primario
+  background-color: $color-primario
+
+.c-color-sistema-j
+  color: $color-sistema-j
 
 //bordes
+.borde-10
+  border-radius: 10px
+.borde-14
+  border-radius: 14px
 .borde-20
   border-radius: 20px
+
+//fondos
+.fondo-personalizado-1
+  position: relative
+  &:before
+    content: ""
+    position: absolute
+    width: 108%
+    left: -4%
+    @media screen and (max-width: $bp-max-xl)
+      width: 110%
+      left: -5%
+    @media screen and (max-width: $bp-max-lg)
+      width: 112%
+      left: -6%
+    @media screen and (max-width: $bp-max-md)
+      width: 116%
+      left: -8%
+    @media screen and (max-width: $bp-max-sm)
+      width: 110%
+      left: -5%
+    @media screen and (max-width: 520px)
+      width: 120%
+      left: -10%
+    top: 0
+    bottom: 0
+    z-index: 0
+    background-repeat: no-repeat
+    background-position: top
+    background-size: cover
+  &.no-tam-full
+    &:before
+      left: 0 !important
+      width: 100% !important
+  &.pos-bottom
+    &:before
+      background-position: bottom
+  &.pos-full
+    &:before
+      background-size: 100%
+      @media screen and (max-width: $bp-max-md)
+        background-size: cover
+  &.f1
+    &:before
+      background-image: url(../assets/curso/temas/4.png)
+  &.f2
+    &:before
+      background-image: url(../assets/curso/temas/8.png)
+  &__contenido
+    position: relative
