@@ -94,11 +94,15 @@
   background-color: $color-sistema-k
 .fondo-color-sistema-l
   background-color: $color-sistema-l
+.fondo-color-sistema-m
+  background-color: $color-sistema-m
 .fondo-color-primario
   background-color: $color-primario
 
 .c-color-sistema-j
   color: $color-sistema-j
+.c-color-primario
+  color: $color-primario
 
 //bordes
 .borde-10
@@ -155,5 +159,78 @@
   &.f2
     &:before
       background-image: url(../assets/curso/temas/8.png)
+  &.f3
+    &:before
+      background: rgb(253,219,180)
+      background: linear-gradient(180deg, rgba(253,219,180,1) 0%, rgba(199,234,208,1) 100%)
   &__contenido
     position: relative
+
+//slyders personalizados
+.slider-personalizado-1
+  .slyder-a__btn--sigt,.slyder-a__btn--atrs
+    transform: rotate(0)
+    background-color: $color-acento-botones
+    background-image: url(../assets/curso/temas/10.svg)
+    background-size: 10px 16px
+  .slyder-a__btn--atrs
+    transform: rotate(180deg) !important
+  .slyder-a__bullets__item
+    opacity: 0.35
+    background-color: $color-acento-contenido
+    border: none !important
+    &--active
+      opacity: 1 !important
+
+//acordion
+.acordion-personalizado-1
+  .tarjeta
+    .acordion__header
+      margin-bottom: 0.7rem !important
+    padding-right: 1rem !important
+    padding-left: 1rem !important
+    padding-top: 0.7rem !important
+    border-radius: 10px
+    background-color: $color-sistema-l
+    &.acordion__activo
+      background-color: #F1E7C2
+  .acordion__accion__btn--a
+    width: 50px
+    height: 50px
+    background-color: $color-acento-botones !important
+    color: $white
+
+//listas
+.list-per-1
+  li
+    display: flex
+
+//tabs
+.tabs-personalizado-1
+  border: 1px solid #707070
+  border-top: none
+  .tabs-b__tab
+    border-bottom: none
+    background-color: #E7E8E7
+    .tabs-b__tab__icon
+      img
+        filter: grayscale(1)
+    &--active
+      background-color: white
+      border-right: none
+      .tabs-b__tab__icon
+        img
+          filter: grayscale(0)
+      
+
+.ferewrew
+    background-color: white !important
+    border-bottom: none
+    &__title
+      h4
+        font-weight: normal
+    &--active
+      h4
+        font-weight: bold
+      background-color: $color-sistema-l !important
+      border-right: none
