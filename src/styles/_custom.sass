@@ -96,6 +96,14 @@
   background-color: $color-sistema-l
 .fondo-color-sistema-m
   background-color: $color-sistema-m
+.fondo-color-sistema-n
+  background-color: $color-sistema-n
+.fondo-color-sistema-o
+  background-color: $color-sistema-o
+.fondo-color-sistema-p
+  background-color: $color-sistema-p
+.fondo-color-sistema-q
+  background-color: $color-sistema-q
 .fondo-color-primario
   background-color: $color-primario
 
@@ -109,6 +117,8 @@
   border-radius: 10px
 .borde-14
   border-radius: 14px
+.borde-15
+  border-radius: 15px
 .borde-20
   border-radius: 20px
 
@@ -153,6 +163,15 @@
       background-size: 100%
       @media screen and (max-width: $bp-max-md)
         background-size: cover
+  &.top-1
+    &:before
+      top: 60px
+  &.top-2
+    &:before
+      top: 35px
+  &.bottom-1
+    &:before
+      bottom: 70px
   &.f1
     &:before
       background-image: url(../assets/curso/temas/4.png)
@@ -163,6 +182,12 @@
     &:before
       background: rgb(253,219,180)
       background: linear-gradient(180deg, rgba(253,219,180,1) 0%, rgba(199,234,208,1) 100%)
+  &.f4
+    &:before
+      background-image: url(../assets/curso/temas/29.png)
+  &.f5
+    &:before
+      background-image: url(../assets/curso/temas/35.png)
   &__contenido
     position: relative
 
@@ -181,6 +206,26 @@
     border: none !important
     &--active
       opacity: 1 !important
+
+.slider-personalizado-2
+  .slyder-f__btn
+    position: relative
+    *
+      position: relative
+    &:before
+      content: ""
+      background-color: $color-acento-botones
+      position: absolute
+      height: 50px
+      width: 50px
+      z-index: 0
+      border-radius: 50%
+      @media screen and (max-width: 576px)
+        width: 30px
+        height: 30px
+    i
+      font-size: 1.2rem
+      color: $white
 
 //acordion
 .acordion-personalizado-1
@@ -221,16 +266,14 @@
       .tabs-b__tab__icon
         img
           filter: grayscale(0)
-      
 
-.ferewrew
-    background-color: white !important
-    border-bottom: none
-    &__title
-      h4
-        font-weight: normal
-    &--active
-      h4
-        font-weight: bold
-      background-color: $color-sistema-l !important
-      border-right: none
+//tarjetas
+.tarjeta-personalizada-1
+  position: relative
+  border-radius: 22px
+  overflow: hidden
+  .cont-texto
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0

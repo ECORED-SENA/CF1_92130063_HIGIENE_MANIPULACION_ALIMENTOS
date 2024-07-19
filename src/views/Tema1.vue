@@ -201,70 +201,332 @@
     #t_1_2.titulo-segundo.color-acento-contenido
       h2 1.2 Tipos de contaminación en alimentos
     
-    .row.mb-5
-      .col-lg-9.mb-4.mb-lg-0
-        .row.mb-4
-          .col-lg-5.pe-lg-0
-            .fondo-color-sistema-m.py-3.px-4.px-md-5.h-100.d-flex.align-items-center
-              figure
-                img.mx-auto(src="@/assets/curso/temas/20.svg",style="max-width: 312px;")
-          .col-lg-7.ps-lg-0
-            .fondo-color-primario.p-4.h-100.d-flex.align-items-center
-              p.mb-0 La seguridad alimentaria es un aspecto crucial en la salud pública, ya que la presencia de contaminantes en los alimentos puede causar graves enfermedades. Existen diversos tipos de contaminación que pueden afectar los alimentos, comprometiendo su calidad y seguridad. Estos contaminantes pueden clasificarse en cuatro categorías principales: física, química, biológica y cruzada. Cada tipo de contaminación tiene sus propias fuentes, características y métodos de prevención.
+    .fondo-personalizado-1.pos-full.f4.top-1.mb-2
+      .fondo-personalizado-1__contenido
+        .row.mb-5
+          .col-lg-9.mb-4.mb-lg-0
+            .row.mb-4
+              .col-lg-5.pe-lg-0
+                .fondo-color-sistema-m.py-3.px-4.px-md-5.h-100.d-flex.align-items-center
+                  figure
+                    img.mx-auto(src="@/assets/curso/temas/20.svg",style="max-width: 312px;")
+              .col-lg-7.ps-lg-0
+                .fondo-color-primario.p-4.h-100.d-flex.align-items-center
+                  p.mb-0 La seguridad alimentaria es un aspecto crucial en la salud pública, ya que la presencia de contaminantes en los alimentos puede causar graves enfermedades. Existen diversos tipos de contaminación que pueden afectar los alimentos, comprometiendo su calidad y seguridad. Estos contaminantes pueden clasificarse en cuatro categorías principales: física, química, biológica y cruzada. Cada tipo de contaminación tiene sus propias fuentes, características y métodos de prevención.
+            
+            p.mb-0 A continuación, se detallan estos tipos de contaminación y las medidas necesarias para evitar que los alimentos se vean afectados, asegurando así la protección de los consumidores y el mantenimiento de estándares de higiene adecuados.
+
+          .col-lg-3
+            figure
+              img.mx-auto(src="@/assets/curso/temas/19.svg",style="max-width: 295px;")
         
-        p.mb-0 A continuación, se detallan estos tipos de contaminación y las medidas necesarias para evitar que los alimentos se vean afectados, asegurando así la protección de los consumidores y el mantenimiento de estándares de higiene adecuados.
+        .bg-white
+          TabsB.color-acento-contenido.tabs-personalizado-1
+            .div.mt-5.pb-5.px-4.px-lg-5(titulo="Contaminación física" :icono="require('@/assets/curso/temas/21.svg')")
+              .row 
+                .col-lg-8.mb-4.mb-lg-0
+                  h4.mb-4 Contaminación física
+                  p.mb-4 La contaminación física está relacionada con la presencia de suciedad o restos de materiales no comestibles en los alimentos. Estos materiales incluyen piedras, maderas, cabellos, anillos, vidrios, fragmentos de metal u otros objetos que accidentalmente pueden llegar al alimento. Para prevenir la contaminación física, es importante seguir estas recomendaciones: 
+                  ul.lista-ul.list-per-1.ps-md-4.mb-0
+                    li
+                      i.fas.fa-check-circle.c-color-primario 
+                      span Al retirar el hielo de la hielera, no manipularlo con jarras ni vasos; utilice palas plásticas o de acero inoxidable. 
+                    li
+                      i.fas.fa-check-circle.c-color-primario 
+                      span No poner a enfriar alimentos en el hielo que se utiliza para las bebidas.
+                    li
+                      i.fas.fa-check-circle.c-color-primario 
+                      span En el espacio donde se preparan o almacenan los alimentos, no se deben poner palillos o guarniciones.
+                    li.mb-0
+                      i.fas.fa-check-circle.c-color-primario 
+                      span Los abrelatas se deben usar inmediatamente antes de utilizarlos y, si es necesario, cambiar las navajas cuando estén desgastadas u oxidadas.
+                .col-lg-4
+                  figure
+                    img.mx-auto(src="@/assets/curso/temas/22.png",style="max-width: 319px;")
+            .div.mt-5.pb-5.px-4.px-lg-5(titulo="Contaminación química" :icono="require('@/assets/curso/temas/24.svg')")
+              .row 
+                .col-lg-8.mb-4.mb-lg-0
+                  h4.mb-4 Contaminación química
+                  p.mb-0 La contaminación química se produce por el uso de aditivos no permitidos o cuando estos se añaden en exceso. También puede ocurrir por la presencia de detergentes, barniz de latas o pesticidas. Estos químicos pueden ser perjudiciales para la salud si se ingieren en cantidades significativas. Es crucial seguir las regulaciones sobre el uso de aditivos y asegurarse de que los alimentos no entren en contacto con sustancias químicas durante su manipulación y almacenamiento. 
+                .col-lg-4
+                  figure.mb-4.mb-lg-0
+                    img.mx-auto(src="@/assets/curso/temas/23.png",style="max-width: 319px;")
+            .div.mt-5.pb-5.px-4.px-lg-5(titulo="Contaminación biológica" :icono="require('@/assets/curso/temas/26.svg')")
+              .row 
+                .col-lg-8.mb-4.mb-lg-0
+                  h4.mb-4 Contaminación biológica
+                  p.mb-0 La contaminación biológica es causada por toxinas de patógenos como hongos y bacterias. Muchas de estas toxinas son resistentes al calor, como es el caso de la bacteria #[em Staphylococcus]. Esta contaminación puede provocar graves enfermedades alimentarias. Para prevenirla, es importante mantener una higiene adecuada en la manipulación de alimentos, cocinar los alimentos a temperaturas seguras y evitar la contaminación cruzada. 
+                .col-lg-4
+                  figure.mb-4.mb-lg-0
+                    img.mx-auto(src="@/assets/curso/temas/25.png",style="max-width: 319px;")
+            .div.mt-5.pb-5.px-4.px-lg-5(titulo="Contaminación cruzada" :icono="require('@/assets/curso/temas/28.svg')")
+              .row 
+                .col-lg-8.mb-4.mb-lg-0
+                  h4.mb-4 Contaminación cruzada
+                  p.mb-0 La contaminación cruzada se da cuando hay transferencia de microorganismos o de sustancias dañinas de una superficie a otra. Esto puede ocurrir en distintas etapas de la fabricación de un alimento. Un ejemplo es cuando se manipula carne en una superficie y luego, sin ser lavada, se manipula otro alimento. Para prevenir la contaminación cruzada, se deben lavar y desinfectar todas las superficies y utensilios después de manipular alimentos crudos, y mantener separados los alimentos crudos de los cocidos durante la preparación y el almacenamiento.
+                .col-lg-4
+                  figure.mb-4.mb-lg-0
+                    img.mx-auto(src="@/assets/curso/temas/27.png",style="max-width: 319px;")
+    
+    Separador
+    
+    #t_1_3.titulo-segundo.color-acento-contenido
+      h2 1.3 Selección de alimentos frescos y de calidad
+    
+    p.mb-0 La selección adecuada de alimentos es fundamental para garantizar una dieta saludable y segura. Este proceso no solo influye en la calidad nutricional de los productos que consumimos, sino también en nuestra salud a largo plazo. Para realizar una selección acertada, es esencial considerar diversas características específicas de cada tipo de alimento. #[span.fw-bold.c-color-sistema-j A continuación, se detallan los criterios esenciales que deben tenerse en cuenta al elegir alimentos envasados, frutas y hortalizas, productos lácteos, carnes rojas, pollo y pescado. Con esta información, se busca facilitar decisiones informadas que promuevan el bienestar y la seguridad alimentaria.]
 
-      .col-lg-3
-        figure
-          img.mx-auto(src="@/assets/curso/temas/19.svg",style="max-width: 295px;")
+    .titulo-decorativo.my-5
+      .cont-figura
+        img(src="@/assets/curso/temas/img-tit-dec.svg")
+      .cont-text 
+        h3 Selección de alimentos
 
-    TabsB.color-acento-contenido.tabs-personalizado-1
-      .div.mt-5.pb-5.px-4.px-lg-5(titulo="Contaminación física" :icono="require('@/assets/curso/temas/21.svg')")
+    p.mb-4 Las primeras características que se deben tomar en cuenta en su selección son:
+
+    .fondo-personalizado-1.f5.top-2.bottom-1
+      .fondo-personalizado-1__contenido
         .row 
-          .col-lg-8
-            h4.mb-4 Contaminación física
-            p.mb-4 La contaminación física está relacionada con la presencia de suciedad o restos de materiales no comestibles en los alimentos. Estos materiales incluyen piedras, maderas, cabellos, anillos, vidrios, fragmentos de metal u otros objetos que accidentalmente pueden llegar al alimento. Para prevenir la contaminación física, es importante seguir estas recomendaciones: 
-            ul.lista-ul.list-per-1.ps-md-4.mb-0
-              li
-                i.fas.fa-check-circle.c-color-primario 
-                span Al retirar el hielo de la hielera, no manipularlo con jarras ni vasos; utilice palas plásticas o de acero inoxidable. 
-              li
-                i.fas.fa-check-circle.c-color-primario 
-                span No poner a enfriar alimentos en el hielo que se utiliza para las bebidas.
-              li
-                i.fas.fa-check-circle.c-color-primario 
-                span En el espacio donde se preparan o almacenan los alimentos, no se deben poner palillos o guarniciones.
-              li.mb-0
-                i.fas.fa-check-circle.c-color-primario 
-                span Los abrelatas se deben usar inmediatamente antes de utilizarlos y, si es necesario, cambiar las navajas cuando estén desgastadas u oxidadas.
           .col-lg-4
             figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/22.png",style="max-width: 319px;")
-      .div.mt-5.pb-5.px-4.px-lg-5(titulo="Contaminación química" :icono="require('@/assets/curso/temas/24.svg')")
-        .row 
+              img.mx-auto(src="@/assets/curso/temas/34.png",style="max-width: 401px;")
           .col-lg-8
-            h4.mb-4 Contaminación química
-            p.mb-0 La contaminación química se produce por el uso de aditivos no permitidos o cuando estos se añaden en exceso. También puede ocurrir por la presencia de detergentes, barniz de latas o pesticidas. Estos químicos pueden ser perjudiciales para la salud si se ingieren en cantidades significativas. Es crucial seguir las regulaciones sobre el uso de aditivos y asegurarse de que los alimentos no entren en contacto con sustancias químicas durante su manipulación y almacenamiento. 
+            SlyderF.slider-personalizado-2(columnas="col-lg-6")
+              .borde-14.py-5.px-4.fondo-color-primario.h-100
+                figure.mb-4
+                  img.mx-auto(src="@/assets/curso/temas/30.svg",style="max-width: 89px;")
+                h4.fondo-color-sistema-m.text-center.p-1.mb-4(style="font-size: 17px;") Condiciones del empaque
+                p.mb-0.text-center Por ejemplo, los productos enlatados deben rechazarse si presentan abolladuras, corrosión, abombamiento, entre otros.
+              .borde-14.py-5.px-4.fondo-color-primario.h-100
+                figure.mb-4
+                  img.mx-auto(src="@/assets/curso/temas/31.svg",style="max-width: 84px;")
+                h4.fondo-color-sistema-m.text-center.p-1.mb-4(style="font-size: 17px;") Fecha de producción
+                p.mb-0.text-center Indica el día en que un producto alimenticio fue fabricado o envasado. Marca el inicio de su vida útil.
+              .borde-14.py-5.px-4.fondo-color-primario.h-100
+                figure.mb-4
+                  img.mx-auto(src="@/assets/curso/temas/32.svg",style="max-width: 86px;")
+                h4.fondo-color-sistema-m.text-center.p-1.mb-4(style="font-size: 17px;") Fecha de vencimiento
+                p.mb-0.text-center Señala hasta cuándo el producto se mantendrá en condiciones óptimas y será seguro para el consumo. Después de esta fecha, puede no ser seguro comerlo.
+              .borde-14.py-5.px-4.fondo-color-primario.h-100
+                figure.mb-4
+                  img.mx-auto(src="@/assets/curso/temas/33.svg",style="max-width: 95px;")
+                h4.fondo-color-sistema-m.text-center.p-1.mb-4(style="font-size: 17px;") Características del alimento
+                p.mb-0.text-center En el caso de las grasas y aceites, no deben tener olores rancios; las galletas deben estar crujientes; el pan no debe tener moho.
+
+        .titulo-decorativo.my-5
+          .cont-figura
+            img(src="@/assets/curso/temas/img-tit-dec.svg")
+          .cont-text 
+            h3 Selección de frutas y hortalizas
+        
+        p.mb-4 Las características que se deben tomar en cuenta al comprar frutas y hortalizas son:
+        
+        .row.justify-content-center
+          .col-lg-4.col-md-6.mb-4
+            .tarjeta-personalizada-1
+              figure.pb-5.pb-sm-1
+                img.mx-auto(src="@/assets/curso/temas/36.png")
+              .cont-texto.fondo-color-sistema-m.p-3.p-sm-4
+                h4.mb-4.text-center Textura
+                p.text-center.mb-0 La corteza o cáscara debe estar libre de cortaduras o magulladuras y firme al tacto.
+          .col-lg-4.col-md-6.mb-4
+            .tarjeta-personalizada-1
+              figure.pb-5.pb-sm-1
+                img.mx-auto(src="@/assets/curso/temas/37.png")
+              .cont-texto.fondo-color-sistema-m.p-3.p-sm-4
+                h4.mb-4.text-center Empaque
+                p.text-center.mb-0 Deben estar en canastas plásticas limpias o en bolsas plásticas con aberturas.
+          .col-lg-4.col-md-6.mb-4
+            .tarjeta-personalizada-1
+              figure.pb-5.pb-sm-1
+                img.mx-auto(src="@/assets/curso/temas/38.png")
+              .cont-texto.fondo-color-sistema-m.p-3.p-sm-4
+                h4.mb-4.text-center Transporte
+                p.text-center.mb-0 El camión donde se transporte el producto debe estar en buenas condiciones higiénicas.
+
+        .titulo-decorativo.my-5
+          .cont-figura
+            img(src="@/assets/curso/temas/img-tit-dec.svg")
+          .cont-text 
+            h3 Selección de leche y sus derivados
+        
+        p.mb-4 Las características que se deben tomar en cuenta al comprar productos lácteos son:
+
+        .row
+          .col-lg-9
+            .row 
+              .col-lg-4.mb-4
+                .fondo-color-sistema-n.p-4.borde-15.h-100.align-content-center
+                  .row.align-items-center
+                    .col-lg-4.col-md-2.col-sm-3
+                      figure.mb-4.mb-sm-0
+                        img.mx-auto(src="@/assets/curso/temas/40.svg",style="max-width: 58px;")
+                    .col-lg-8.col-md-10.col-sm-9
+                      p.mb-0 La leche y sus derivados deben estar envasados.
+              .col-lg-4.mb-4
+                .fondo-color-sistema-n.p-4.borde-15.h-100.align-content-center
+                  .row.align-items-center
+                    .col-lg-4.col-md-2.col-sm-3
+                      figure.mb-4.mb-sm-0
+                        img.mx-auto(src="@/assets/curso/temas/41.svg",style="max-width: 43px;")
+                    .col-lg-8.col-md-10.col-sm-9
+                      p.mb-0 El envase debe estar en buenas condiciones y cerrado.
+              .col-lg-4.mb-4
+                .fondo-color-sistema-n.p-4.borde-15.h-100.align-content-center
+                  .row.align-items-center
+                    .col-lg-4.col-md-2.col-sm-3
+                      figure.mb-4.mb-sm-0
+                        img.mx-auto(src="@/assets/curso/temas/42.svg",style="max-width: 56px;")
+                    .col-lg-8.col-md-10.col-sm-9
+                      p.mb-0 Fecha de vencimiento vigente.
+            .row
+              .col-lg-4.mb-4
+                .fondo-color-sistema-o.p-4.borde-15.h-100.align-content-center
+                  .row.align-items-center
+                    .col-lg-4.col-md-2.col-sm-3
+                      figure.mb-4.mb-sm-0
+                        img.mx-auto(src="@/assets/curso/temas/43.svg",style="max-width: 56px;")
+                    .col-lg-8.col-md-10.col-sm-9
+                      p.mb-0.text-white Mantener en refrigeración.
+              .col-lg-4.mb-4
+                .fondo-color-sistema-o.p-4.borde-15.h-100.align-content-center
+                  .row.align-items-center
+                    .col-lg-4.col-md-2.col-sm-3
+                      figure.mb-4.mb-sm-0
+                        img.mx-auto(src="@/assets/curso/temas/44.svg",style="max-width: 64px;")
+                    .col-lg-8.col-md-10.col-sm-9
+                      p.mb-0.text-white Conocimiento de su procedencia y de las condiciones en que fue procesado cada uno de los productos.
+              .col-lg-4.mb-4
+                .fondo-color-sistema-o.p-4.borde-15.h-100.align-content-center
+                  .row.align-items-center
+                    .col-lg-4.col-md-2.col-sm-3
+                      figure.mb-4.mb-sm-0
+                        img.mx-auto(src="@/assets/curso/temas/45.svg",style="max-width: 55px;")
+                    .col-lg-8.col-md-10.col-sm-9
+                      p.mb-0.text-white Sin sabores ni olores extraños.
+
+          .col-lg-3.order-first.order-lg-last.mb-4.align-self-center
+            figure
+              img.mx-auto(src="@/assets/curso/temas/39.png",style="max-width: 295px;")
+    
+        .titulo-decorativo.my-5
+          .cont-figura
+            img(src="@/assets/curso/temas/img-tit-dec.svg")
+          .cont-text 
+            h3 Selección de carnes rojas
+        
+        p.mb-4 Las características que se deben tomar en cuenta al seleccionar carnes son:
+
+        .row.align-items-center
           .col-lg-4
-            figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/23.png",style="max-width: 319px;")
-      .div.mt-5.pb-5.px-4.px-lg-5(titulo="Contaminación biológica" :icono="require('@/assets/curso/temas/26.svg')")
-        .row 
+            figure.mb-4
+              img.mx-auto(src="@/assets/curso/temas/46.png",style="max-width: 400px;")
           .col-lg-8
-            h4.mb-4 Contaminación biológica
-            p.mb-0 La contaminación biológica es causada por toxinas de patógenos como hongos y bacterias. Muchas de estas toxinas son resistentes al calor, como es el caso de la bacteria #[em Staphylococcus]. Esta contaminación puede provocar graves enfermedades alimentarias. Para prevenirla, es importante mantener una higiene adecuada en la manipulación de alimentos, cocinar los alimentos a temperaturas seguras y evitar la contaminación cruzada. 
+            .row 
+              .col-lg-3.col-md-6.mb-4
+                .fondo-color-sistema-p.p-4.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/47.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Color
+                  p.mb-0.text-center Rosado o rojo brillante.
+              .col-lg-3.col-md-6.mb-4
+                .fondo-color-sistema-p.p-4.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/48.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Olor
+                  p.mb-0.text-center Característico del producto fresco.
+              .col-lg-3.col-md-6.mb-4
+                .fondo-color-sistema-p.p-4.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/49.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Textura
+                  p.mb-0.text-center Jugosa y firme.
+              .col-lg-3.col-md-6.mb-4
+                .fondo-color-sistema-p.p-4.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/50.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Temperatura
+                  p.mb-0.text-center 4 °C.
+
+        .titulo-decorativo.my-5
+          .cont-figura
+            img(src="@/assets/curso/temas/img-tit-dec.svg")
+          .cont-text 
+            h3 Selección de pollo
+    
+        p.mb-4 Las características que se deben tomar en cuenta al comprar pollo son:
+
+        .row.align-items-center
           .col-lg-4
-            figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/25.png",style="max-width: 319px;")
-      .div.mt-5.pb-5.px-4.px-lg-5(titulo="Contaminación cruzada" :icono="require('@/assets/curso/temas/28.svg')")
-        .row 
+            figure.mb-4
+              img.mx-auto(src="@/assets/curso/temas/51.png",style="max-width: 403px;")
           .col-lg-8
-            h4.mb-4 Contaminación cruzada
-            p.mb-0 La contaminación cruzada se da cuando hay transferencia de microorganismos o de sustancias dañinas de una superficie a otra. Esto puede ocurrir en distintas etapas de la fabricación de un alimento. Un ejemplo es cuando se manipula carne en una superficie y luego, sin ser lavada, se manipula otro alimento. Para prevenir la contaminación cruzada, se deben lavar y desinfectar todas las superficies y utensilios después de manipular alimentos crudos, y mantener separados los alimentos crudos de los cocidos durante la preparación y el almacenamiento.
+            .row 
+              .col-lg-3.col-md-6.mb-4.ps-lg-0
+                .fondo-color-sistema-p.p-3.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/52.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Color
+                  p.mb-0.text-center Rosado brillante.
+              .col-lg-3.col-md-6.mb-4.ps-lg-0
+                .fondo-color-sistema-p.p-3.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/53.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Olor
+                  p.mb-0.text-center Característico del producto fresco.
+              .col-lg-3.col-md-6.mb-4.ps-lg-0
+                .fondo-color-sistema-p.p-3.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/54.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Signos de descomposición
+                  p.mb-0.text-center Partes pegajosas bajo las alas y alrededor de las articulaciones, y un color oscuro en las puntas de las alas.
+              .col-lg-3.col-md-6.mb-4.ps-lg-0
+                .fondo-color-sistema-p.p-3.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/50.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Temperatura
+                  p.mb-0.text-center Entre 4 °C y 5 °C.
+
+        .titulo-decorativo.my-5
+          .cont-figura
+            img(src="@/assets/curso/temas/img-tit-dec.svg")
+          .cont-text 
+            h3 Selección de pescado
+    
+        p.mb-4 Las características que se deben tomar en cuenta al comprar pescado son:
+
+        .row.align-items-center
           .col-lg-4
-            figure.mb-4.mb-lg-0
-              img.mx-auto(src="@/assets/curso/temas/27.png",style="max-width: 319px;")
-     
+            figure.mb-4
+              img.mx-auto(src="@/assets/curso/temas/55.png",style="max-width: 400px;")
+          .col-lg-8
+            .row 
+              .col-lg-3.col-md-6.mb-4.ps-lg-0
+                .fondo-color-sistema-p.p-3.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/56.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Color
+                  p.mb-0.text-center Color natural de la especie.
+              .col-lg-3.col-md-6.mb-4.ps-lg-0
+                .fondo-color-sistema-p.p-3.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/57.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Olor
+                  p.mb-0.text-center Característico del producto fresco.
+              .col-lg-3.col-md-6.mb-4.ps-lg-0
+                .fondo-color-sistema-p.p-3.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/58.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Textura
+                  p.mb-0.text-center Firme, elástica y resistente a la presión de los dedos.
+              .col-lg-3.col-md-6.mb-4.ps-lg-0
+                .fondo-color-sistema-p.p-3.borde-14.h-100
+                  figure.mb-4
+                    img.mx-auto(src="@/assets/curso/temas/50.svg",style="max-width: 65px;")
+                  h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Otras características
+                  p.mb-0.text-center Ojos salientes y brillantes; agallas de color rojo brillante y húmedas; escamas bien adheridas a la piel; vientre no abultado; carne limpia y fresca.
+
+
+
       
 </template>
 
