@@ -45,7 +45,7 @@ export default {
           id: 2,
           texto:
             '¿Qué tipo de alimentos son una fuente principal de carbohidratos?',
-          imagen: require('@/assets/componentes/pregunta_2.png'),
+          imagen: require('@/assets/componentes/pregunta_2.svg'),
           barajarRespuestas: true,
           opciones: [
             {
@@ -77,7 +77,7 @@ export default {
           id: 3,
           texto:
             'Según la Resolución 2674 de 2013, un alimento es considerado adulterado cuando:',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          imagen: require('@/assets/componentes/pregunta_3.svg'),
           opciones: [
             {
               id: 'a',
@@ -110,7 +110,7 @@ export default {
           id: 4,
           texto:
             'El proceso de descomposición de los alimentos se identifica por:',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          imagen: require('@/assets/componentes/pregunta_4.svg'),
           barajarRespuestas: true,
           opciones: [
             { id: 'a', texto: 'Presencia de suciedad.', esCorrecta: false },
@@ -137,7 +137,7 @@ export default {
         {
           id: 5,
           texto: '¿Cuál es un ejemplo de contaminación cruzada?',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          imagen: require('@/assets/componentes/pregunta_1.svg'),
           opciones: [
             {
               id: 'a',
@@ -169,7 +169,7 @@ export default {
           id: 6,
           texto:
             'En la selección de frutas y hortalizas, una característica importante es:',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          imagen: require('@/assets/componentes/pregunta_2.svg'),
           opciones: [
             {
               id: 'a',
@@ -199,7 +199,7 @@ export default {
         {
           id: 7,
           texto: 'Para prevenir la contaminación física, se recomienda:',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          imagen: require('@/assets/componentes/pregunta_3.svg'),
           opciones: [
             {
               id: 'a',
@@ -231,7 +231,7 @@ export default {
           id: 8,
           texto:
             'Una característica importante al seleccionar productos lácteos es:',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          imagen: require('@/assets/componentes/pregunta_4.svg'),
           opciones: [
             {
               id: 'a',
@@ -262,7 +262,7 @@ export default {
           id: 9,
           texto:
             '¿Qué indica la fecha de vencimiento en un producto alimenticio?',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          imagen: require('@/assets/componentes/pregunta_1.svg'),
           opciones: [
             {
               id: 'a',
@@ -293,7 +293,7 @@ export default {
         {
           id: 10,
           texto: '¿Qué es un alimento adulterado?',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          imagen: require('@/assets/componentes/pregunta_2.svg'),
           opciones: [
             {
               id: 'a',
