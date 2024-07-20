@@ -1,8 +1,8 @@
 <template lang="pug">
 .curso-main-container.pb-3
   BannerInterno
-  .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
-    .titulo-principal.color-acento-contenido
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5.pb-0.pb-md-0
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 1
       h1 Los alimentos
@@ -12,36 +12,36 @@
         .pt-3
           .fondo-color-sistema-l
             .row.align-items-center
-              .col-lg-5
+              .col-lg-5(data-aos="fade-right")
                 figure
                   img.mx-auto(src="@/assets/curso/temas/5.png")
-              .col-lg-7
+              .col-lg-7(data-aos="fade-left")
                 p.mb-0.p-4.py-lg-3 Los alimentos son sustancias que se ingieren diariamente para nutrir el cuerpo y proporcionarle las calorías y la energía necesarias para realizar diversas actividades. Estos no solo son esenciales para mantener la salud y el bienestar, sino que también desempeñan un papel fundamental en el desarrollo y el funcionamiento adecuado de los sistemas del cuerpo. La clasificación de los alimentos puede hacerse según #[span.c-color-sistema-j.fw-bold su origen y su función].
         
-        .titulo-decorativo.my-5
+        .titulo-decorativo.my-5(data-aos="fade-up")
           .cont-figura
             img(src="@/assets/curso/temas/img-tit-dec.svg")
           .cont-text 
             h3 Alimentos por su origen
 
-        p.mb-4 La clasificación de los alimentos según su origen permite entender mejor su aporte nutricional y su papel en una dieta equilibrada. Esta clasificación se divide en alimentos orgánicos e inorgánicos, cada uno con sus propias subcategorías.
+        p.mb-4(data-aos="fade-up") La clasificación de los alimentos según su origen permite entender mejor su aporte nutricional y su papel en una dieta equilibrada. Esta clasificación se divide en alimentos orgánicos e inorgánicos, cada uno con sus propias subcategorías.
 
-        .titulo-sexto.color-acento-contenido.mb-5
+        .titulo-sexto.color-acento-contenido.mb-5(data-aos="fade-right")
           p.mb-0 #[b Figura 1.] Alimentos según su origen
         
-        figure.mb-3
+        figure.mb-3(data-aos="zoom-in-out")
           img.mx-auto.d-none.d-lg-block(src="@/assets/curso/temas/6.svg",style="max-width: 1232px;",alt="Diagrama que presenta la clasificación de los alimentos en orgánicos e inorgánicos. Los alimentos orgánicos se dividen en vegetales como maíz, trigo, espinacas, acelgas y animales como huevos, carne, leche. Los alimentos inorgánicos incluyen minerales como agua, sal, fósforo, hierro y yodo.")
           img.mx-auto.d-lg-none(src="@/assets/curso/temas/7.svg",style="max-width: 333px;",alt="Diagrama que presenta la clasificación de los alimentos en orgánicos e inorgánicos. Los alimentos orgánicos se dividen en vegetales como maíz, trigo, espinacas, acelgas y animales como huevos, carne, leche. Los alimentos inorgánicos incluyen minerales como agua, sal, fósforo, hierro y yodo.")
 
-        .titulo-decorativo.my-5
+        .titulo-decorativo.my-5(data-aos="fade-up")
           .cont-figura
             img(src="@/assets/curso/temas/img-tit-dec.svg")
           .cont-text 
             h3 Alimentos por su función
 
-        p.mb-0 Los alimentos se pueden clasificar según la función que desempeñan en el organismo. Esta clasificación ayuda a entender cómo cada tipo de alimento contribuye al crecimiento, desarrollo, energía y mantenimiento del cuerpo.
+        p.mb-0(data-aos="fade-up") Los alimentos se pueden clasificar según la función que desempeñan en el organismo. Esta clasificación ayuda a entender cómo cada tipo de alimento contribuye al crecimiento, desarrollo, energía y mantenimiento del cuerpo.
 
-    .fondo-personalizado-1.f3.mb-2
+    .fondo-personalizado-1.f3.mb-2(data-aos="flip-up")
       .fondo-personalizado-1__contenido.py-5
         .bg-white.borde-20.p-4.pt-lg-5
           SlyderA.slider-personalizado-1.pt-lg-2(tipo="b")
@@ -69,16 +69,16 @@
     
     Separador
 
-    #t_1_1.titulo-segundo.color-acento-contenido
+    #t_1_1.titulo-segundo.color-acento-contenido(data-aos="flip-up")
       h2 1.1 Conceptos clave
 
-    p.mb-4 A continuación, se explican los conceptos que forman parte de la terminología de manipulación de alimentos, inmersos en la Resolución 2674 de 2013 del Ministerio de Salud y Protección Social, dirigida a todas las personas que realizan actividades de transformación de alimentos para que conozcan el significado de cada término.
+    p.mb-4(data-aos="fade-left") A continuación, se explican los conceptos que forman parte de la terminología de manipulación de alimentos, inmersos en la Resolución 2674 de 2013 del Ministerio de Salud y Protección Social, dirigida a todas las personas que realizan actividades de transformación de alimentos para que conozcan el significado de cada término.
 
     .row 
-      .col-lg-4
+      .col-lg-4(data-aos="fade-up")
         figure.mb-4.mb-lg-0
           img.mx-auto(src="@/assets/curso/temas/13.png",style="max-width: 401px;")
-      .col-lg-8
+      .col-lg-8(data-aos="fade-down")
         AcordionA.acordion-personalizado-1(tipo="a" clase-tarjeta="tarjeta")
           .div(titulo="Alimento adulterado")
             p.ps-md-5.ms-md-3 Es el alimento al que se le han reemplazado parte de los elementos propios por otras sustancias no autorizadas.
@@ -103,15 +103,15 @@
             .ps-md-5.ms-md-3
               p.bm-4 Es aquel alimento que, por sus condiciones físicas y químicas, puede sufrir alteraciones y requiere condiciones especiales de elaboración, conservación, almacenamiento, transporte y distribución.
     
-    .titulo-decorativo.my-5
+    .titulo-decorativo.my-5(data-aos="fade-up")
       .cont-figura
         img(src="@/assets/curso/temas/img-tit-dec.svg")
       .cont-text 
         h3 Contaminación o descomposición
     
-    p.mb-4 La contaminación y la descomposición son dos procesos diferentes que afectan la calidad y seguridad de los alimentos. Entender estos procesos es crucial para prevenir enfermedades y garantizar el consumo de alimentos en buen estado.
+    p.mb-4(data-aos="fade-up") La contaminación y la descomposición son dos procesos diferentes que afectan la calidad y seguridad de los alimentos. Entender estos procesos es crucial para prevenir enfermedades y garantizar el consumo de alimentos en buen estado.
 
-    .fondo-personalizado-1.f3.mb-2
+    .fondo-personalizado-1.f3.mb-2(data-aos="flip-up")
       .fondo-personalizado-1__contenido.py-5
         .bg-white.borde-20.p-4.pt-lg-5
           SlyderA.slider-personalizado-1.pt-lg-2(tipo="b")
@@ -198,14 +198,14 @@
 
     Separador
 
-    #t_1_2.titulo-segundo.color-acento-contenido
+    #t_1_2.titulo-segundo.color-acento-contenido(data-aos="flip-up")
       h2 1.2 Tipos de contaminación en alimentos
     
     .fondo-personalizado-1.pos-full.f4.top-1.mb-2
       .fondo-personalizado-1__contenido
         .row.mb-5
           .col-lg-9.mb-4.mb-lg-0
-            .row.mb-4
+            .row.mb-4(data-aos="fade-down")
               .col-lg-5.pe-lg-0
                 .fondo-color-sistema-m.py-3.px-4.px-md-5.h-100.d-flex.align-items-center
                   figure
@@ -214,13 +214,13 @@
                 .fondo-color-primario.p-4.h-100.d-flex.align-items-center
                   p.mb-0 La seguridad alimentaria es un aspecto crucial en la salud pública, ya que la presencia de contaminantes en los alimentos puede causar graves enfermedades. Existen diversos tipos de contaminación que pueden afectar los alimentos, comprometiendo su calidad y seguridad. Estos contaminantes pueden clasificarse en cuatro categorías principales: física, química, biológica y cruzada. Cada tipo de contaminación tiene sus propias fuentes, características y métodos de prevención.
             
-            p.mb-0 A continuación, se detallan estos tipos de contaminación y las medidas necesarias para evitar que los alimentos se vean afectados, asegurando así la protección de los consumidores y el mantenimiento de estándares de higiene adecuados.
+            p.mb-0(data-aos="fade") A continuación, se detallan estos tipos de contaminación y las medidas necesarias para evitar que los alimentos se vean afectados, asegurando así la protección de los consumidores y el mantenimiento de estándares de higiene adecuados.
 
-          .col-lg-3
+          .col-lg-3(data-aos="fade-left")
             figure
               img.mx-auto(src="@/assets/curso/temas/19.svg",style="max-width: 295px;")
         
-        .bg-white
+        .bg-white(data-aos="zoom-in-out")
           TabsB.color-acento-contenido.tabs-personalizado-1
             .div.mt-5.pb-5.px-4.px-lg-5(titulo="Contaminación física" :icono="require('@/assets/curso/temas/21.svg')")
               .row 
@@ -270,26 +270,26 @@
     
     Separador
     
-    #t_1_3.titulo-segundo.color-acento-contenido
+    #t_1_3.titulo-segundo.color-acento-contenido(data-aos="flip-up")
       h2 1.3 Selección de alimentos frescos y de calidad
     
-    p.mb-0 La selección adecuada de alimentos es fundamental para garantizar una dieta saludable y segura. Este proceso no solo influye en la calidad nutricional de los productos que consumimos, sino también en nuestra salud a largo plazo. Para realizar una selección acertada, es esencial considerar diversas características específicas de cada tipo de alimento. #[span.fw-bold.c-color-sistema-j A continuación, se detallan los criterios esenciales que deben tenerse en cuenta al elegir alimentos envasados, frutas y hortalizas, productos lácteos, carnes rojas, pollo y pescado. Con esta información, se busca facilitar decisiones informadas que promuevan el bienestar y la seguridad alimentaria.]
+    p.mb-0(data-aos="fade") La selección adecuada de alimentos es fundamental para garantizar una dieta saludable y segura. Este proceso no solo influye en la calidad nutricional de los productos que consumimos, sino también en nuestra salud a largo plazo. Para realizar una selección acertada, es esencial considerar diversas características específicas de cada tipo de alimento. #[span.fw-bold.c-color-sistema-j A continuación, se detallan los criterios esenciales que deben tenerse en cuenta al elegir alimentos envasados, frutas y hortalizas, productos lácteos, carnes rojas, pollo y pescado. Con esta información, se busca facilitar decisiones informadas que promuevan el bienestar y la seguridad alimentaria.]
 
-    .titulo-decorativo.my-5
+    .titulo-decorativo.my-5(data-aos="fade-up")
       .cont-figura
         img(src="@/assets/curso/temas/img-tit-dec.svg")
       .cont-text 
         h3 Selección de alimentos
 
-    p.mb-4 Las primeras características que se deben tomar en cuenta en su selección son:
+    p.mb-4(data-aos="fade-up") Las primeras características que se deben tomar en cuenta en su selección son:
 
     .fondo-personalizado-1.f5.top-2.bottom-1
       .fondo-personalizado-1__contenido
         .row 
-          .col-lg-4
+          .col-lg-4(data-aos="fade-up")
             figure.mb-4.mb-lg-0
               img.mx-auto(src="@/assets/curso/temas/34.png",style="max-width: 401px;")
-          .col-lg-8
+          .col-lg-8(data-aos="fade-down")
             SlyderF.slider-personalizado-2(columnas="col-lg-6")
               .borde-14.py-5.px-4.fondo-color-primario.h-100
                 figure.mb-4
@@ -312,30 +312,30 @@
                 h4.fondo-color-sistema-m.text-center.p-1.mb-4(style="font-size: 17px;") Características del alimento
                 p.mb-0.text-center En el caso de las grasas y aceites, no deben tener olores rancios; las galletas deben estar crujientes; el pan no debe tener moho.
 
-        .titulo-decorativo.my-5
+        .titulo-decorativo.my-5(data-aos="fade-up")
           .cont-figura
             img(src="@/assets/curso/temas/img-tit-dec.svg")
           .cont-text 
             h3 Selección de frutas y hortalizas
         
-        p.mb-4 Las características que se deben tomar en cuenta al comprar frutas y hortalizas son:
+        p.mb-4(data-aos="fade-up") Las características que se deben tomar en cuenta al comprar frutas y hortalizas son:
         
         .row.justify-content-center
-          .col-lg-4.col-md-6.mb-4
+          .col-lg-4.col-md-6.mb-4(data-aos="flip-up")
             .tarjeta-personalizada-1
               figure.pb-5.pb-sm-1
                 img.mx-auto(src="@/assets/curso/temas/36.png")
               .cont-texto.fondo-color-sistema-m.p-3.p-sm-4
                 h4.mb-4.text-center Textura
                 p.text-center.mb-0 La corteza o cáscara debe estar libre de cortaduras o magulladuras y firme al tacto.
-          .col-lg-4.col-md-6.mb-4
+          .col-lg-4.col-md-6.mb-4(data-aos="flip-up")
             .tarjeta-personalizada-1
               figure.pb-5.pb-sm-1
                 img.mx-auto(src="@/assets/curso/temas/37.png")
               .cont-texto.fondo-color-sistema-m.p-3.p-sm-4
                 h4.mb-4.text-center Empaque
                 p.text-center.mb-0 Deben estar en canastas plásticas limpias o en bolsas plásticas con aberturas.
-          .col-lg-4.col-md-6.mb-4
+          .col-lg-4.col-md-6.mb-4(data-aos="flip-up")
             .tarjeta-personalizada-1
               figure.pb-5.pb-sm-1
                 img.mx-auto(src="@/assets/curso/temas/38.png")
@@ -343,17 +343,17 @@
                 h4.mb-4.text-center Transporte
                 p.text-center.mb-0 El camión donde se transporte el producto debe estar en buenas condiciones higiénicas.
 
-        .titulo-decorativo.my-5
+        .titulo-decorativo.my-5(data-aos="fade-up")
           .cont-figura
             img(src="@/assets/curso/temas/img-tit-dec.svg")
           .cont-text 
             h3 Selección de leche y sus derivados
         
-        p.mb-4 Las características que se deben tomar en cuenta al comprar productos lácteos son:
+        p.mb-4(data-aos="fade-up") Las características que se deben tomar en cuenta al comprar productos lácteos son:
 
         .row
           .col-lg-9
-            .row 
+            .row(data-aos="fade-down")
               .col-lg-4.mb-4
                 .fondo-color-sistema-n.p-4.borde-15.h-100.align-content-center
                   .row.align-items-center
@@ -378,7 +378,7 @@
                         img.mx-auto(src="@/assets/curso/temas/42.svg",style="max-width: 56px;")
                     .col-lg-8.col-md-10.col-sm-9
                       p.mb-0 Fecha de vencimiento vigente.
-            .row
+            .row(data-aos="fade-down")
               .col-lg-4.mb-4
                 .fondo-color-sistema-o.p-4.borde-15.h-100.align-content-center
                   .row.align-items-center
@@ -405,18 +405,18 @@
                       p.mb-0.text-white Sin sabores ni olores extraños.
 
           .col-lg-3.order-first.order-lg-last.mb-4.align-self-center
-            figure
+            figure(data-aos="fade-right")
               img.mx-auto(src="@/assets/curso/temas/39.png",style="max-width: 295px;")
     
-        .titulo-decorativo.my-5
+        .titulo-decorativo.my-5(data-aos="fade-up")
           .cont-figura
             img(src="@/assets/curso/temas/img-tit-dec.svg")
           .cont-text 
             h3 Selección de carnes rojas
         
-        p.mb-4 Las características que se deben tomar en cuenta al seleccionar carnes son:
+        p.mb-4(data-aos="fade-up") Las características que se deben tomar en cuenta al seleccionar carnes son:
 
-        .row.align-items-center
+        .row.align-items-center(data-aos="flip-up")
           .col-lg-4
             figure.mb-4
               img.mx-auto(src="@/assets/curso/temas/46.png",style="max-width: 400px;")
@@ -447,15 +447,15 @@
                   h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Temperatura
                   p.mb-0.text-center 4 °C.
 
-        .titulo-decorativo.my-5
+        .titulo-decorativo.my-5(data-aos="fade-up")
           .cont-figura
             img(src="@/assets/curso/temas/img-tit-dec.svg")
           .cont-text 
             h3 Selección de pollo
     
-        p.mb-4 Las características que se deben tomar en cuenta al comprar pollo son:
+        p.mb-4(data-aos="fade-up") Las características que se deben tomar en cuenta al comprar pollo son:
 
-        .row.align-items-center
+        .row.align-items-center(data-aos="zoom-in-out")
           .col-lg-4
             figure.mb-4
               img.mx-auto(src="@/assets/curso/temas/51.png",style="max-width: 403px;")
@@ -486,15 +486,15 @@
                   h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Temperatura
                   p.mb-0.text-center Entre 4 °C y 5 °C.
 
-        .titulo-decorativo.my-5
+        .titulo-decorativo.my-5(data-aos="fade-up")
           .cont-figura
             img(src="@/assets/curso/temas/img-tit-dec.svg")
           .cont-text 
             h3 Selección de pescado
     
-        p.mb-4 Las características que se deben tomar en cuenta al comprar pescado son:
+        p.mb-4(data-aos="fade-up") Las características que se deben tomar en cuenta al comprar pescado son:
 
-        .row.align-items-center
+        .row.align-items-center(data-aos="fade-left")
           .col-lg-4
             figure.mb-4
               img.mx-auto(src="@/assets/curso/temas/55.png",style="max-width: 400px;")
@@ -524,6 +524,59 @@
                     img.mx-auto(src="@/assets/curso/temas/50.svg",style="max-width: 65px;")
                   h4.fondo-color-sistema-q.text-white.text-center.mb-4.p-1(style="font-size: 17px;") Otras características
                   p.mb-0.text-center Ojos salientes y brillantes; agallas de color rojo brillante y húmedas; escamas bien adheridas a la piel; vientre no abultado; carne limpia y fresca.
+    
+    .titulo-decorativo.mt-5(data-aos="fade-up")
+      .cont-figura
+        img(src="@/assets/curso/temas/img-tit-dec.svg")
+      .cont-text 
+        h3 Consejos para el almacenamiento de alimentos
+    
+    .fondo-personalizado-1.f6
+      .fondo-personalizado-1__contenido.pt-5.pb-5
+        p.mb-4(data-aos="fade-up") El almacenamiento adecuado de alimentos es una práctica fundamental para mantener su calidad y seguridad, evitando posibles contaminaciones y prolongando su vida útil. A través de una serie de pasos y precauciones, es posible garantizar que los alimentos se mantengan en condiciones óptimas, preservando sus propiedades nutritivas y organolépticas. En esta guía, se presentan consejos esenciales para el almacenamiento de alimentos, cubriendo aspectos clave como el espacio, la rotación de productos, la higiene, y el control de temperaturas. #[span.fw-bold.c-color-sistema-j Estos lineamientos son vitales para asegurar que los alimentos lleguen en perfectas condiciones desde el almacenamiento hasta la mesa.]
+
+        .row.align-items-center 
+          .col.lg-8
+            ul.lista-ul.list-per-1.marbot-1(data-aos="fade")
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span Asegúrese de que haya suficiente espacio.
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span Almacene los productos perecederos lo más pronto posible. 
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span Aplique el método PEPS (primero que entra, primero que sale); para ello, marque el alimento con la fecha y la descripción del producto para facilitar la rotación.
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span No coloque ropa u artículos personales en las bodegas.
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span No deje los alimentos en contacto directo con el suelo ni paredes.
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span No almacene productos alimenticios junto con productos que puedan contaminarlos, como productos de limpieza, etc.
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span Coloque los productos en forma espaciosa para que el aire circule alrededor de ellos.
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span Almacene los alimentos en áreas apropiadas y manténgalas limpias.
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span Controle al menos una vez al día las temperaturas de las neveras, refrigeradores y congeladores, y asegúrese de que se cumplan los límites de las temperaturas adecuadas (refrigeración 0 °- 5 °C, congelación -18 °C).
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span Mantenga los empaques de los alimentos limpios y sin daños.
+              li
+                i.fas.fa-check-circle.c-color-primario 
+                span No deje alimentos cerca de la zona de baños y desagües.
+              li.mb-0
+                i.fas.fa-check-circle.c-color-primario 
+                span Dentro de las neveras y refrigeradores, no mezcle alimentos crudos o cocidos para evitar posibles contaminaciones cruzadas.
+          .col-lg-4.order-first.order-lg-last
+            figure.mb-4.mb-lg-0(data-aos="fade-left")
+              img.mx-auto(src="@/assets/curso/temas/59.png",style="max-width: 400px;")
 
 
 

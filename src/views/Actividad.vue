@@ -3,7 +3,7 @@
   BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
 
-    #Actividad                
+    #Actividad         
       <Actividad :cuestionario="cuestionario" />
 
 </template>
@@ -15,8 +15,8 @@ export default {
   components: { Actividad },
   data: () => ({
     cuestionario: {
-      tema: 'Manejo de los residuos sólidos en la producción avícola.',
-      titulo: 'Cuestionario',
+      tema: 'Clasificación y contaminación de alimentos',
+      titulo: 'Alimentos y seguridad alimentaria',
       introduccion:
         'Lea cada enunciado y luego seleccione la respuesta correcta según corresponda.',
       barajarPreguntas: false,
@@ -24,102 +24,310 @@ export default {
         {
           id: 1,
           texto:
-            'Cuáles son los tipos de explotación en los sistemas productivos avícolas:',
+            '¿Cuál es la principal función de los alimentos constructores?',
           imagen: require('@/assets/componentes/pregunta_1.svg'),
           barajarRespuestas: false,
           opciones: [
-            { id: 'a', texto: 'Explotación intensiva', esCorrecta: false },
-            { id: 'b', texto: 'Explotación semi intensiva', esCorrecta: false },
+            { id: 'a', texto: 'Proveer energía.', esCorrecta: false },
+            { id: 'b', texto: 'Regular el metabolismo.', esCorrecta: false },
             {
               id: 'c',
-              texto: 'Explotación extensiva o traspatio',
-              esCorrecta: false,
+              texto: 'Favorecer la formación y reparación de tejidos.',
+              esCorrecta: true,
             },
-            { id: 'd', texto: 'Todas la anteriores', esCorrecta: true },
+            { id: 'd', texto: 'Suministrar minerales.', esCorrecta: false },
           ],
-          mensaje_correcto: '¡Respuesta correcta! Felicidades.',
-          mensaje_incorrecto: 'Respuesta incorrecta. Intenta nuevamente ....',
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
         },
         {
           id: 2,
           texto:
-            'Se lanzan dos proyectiles desde el suelo con la misma velocidad inicial, pero uno se lanza horizontalmente y el otro se lanza formando un ángulo de 45 grados con la horizontal. Considerando la resistencia del aire despreciable, ¿cuáles de las siguientes afirmaciones son verdaderas?',
+            '¿Qué tipo de alimentos son una fuente principal de carbohidratos?',
           imagen: require('@/assets/componentes/pregunta_2.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Ambos proyectiles alcanzarán la misma altura máxima.',
+              texto: 'Frutas y verduras.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Carnes y huevos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Cereales y tubérculos.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Cereales y tubérculos.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 3,
+          texto:
+            'Según la Resolución 2674 de 2013, un alimento es considerado adulterado cuando:',
+          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Tiene una fecha de vencimiento pasada.',
               esCorrecta: false,
             },
             {
               id: 'b',
               texto:
-                'El proyectil lanzado horizontalmente recorrerá una distancia horizontal mayor que el proyectil lanzado a 45 grados',
+                'Se han reemplazado sus elementos propios por sustancias no autorizadas.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto:
+                'Ha sufrido cambios en sus propiedades por agentes físicos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Contiene microorganismos patógenos.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 4,
+          texto:
+            'El proceso de descomposición de los alimentos se identifica por:',
+          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'Presencia de suciedad.', esCorrecta: false },
+            {
+              id: 'b',
+              texto: 'Cambio en olor, sabor y textura.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Uso de aditivos no permitidos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Contacto con sustancias químicas.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 5,
+          texto: '¿Cuál es un ejemplo de contaminación cruzada?',
+          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Uso excesivo de pesticidas en cultivos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Manipular carne cruda y luego vegetales sin lavar las manos.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Presencia de fragmentos de metal en el alimento.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Alimentos con residuos de detergente.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 6,
+          texto:
+            'En la selección de frutas y hortalizas, una característica importante es:',
+          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Fecha de producción.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Olor agradable.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Textura firme y sin magulladuras.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Color brillante.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 7,
+          texto: 'Para prevenir la contaminación física, se recomienda:',
+          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Usar aditivos aprobados.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Mantener alimentos refrigerados.',
               esCorrecta: false,
             },
             {
               id: 'c',
               texto:
-                'La velocidad horizontal del proyectil lanzado a 45 grados será mayor que la velocidad horizontal del proyectil lanzado horizontalmente.',
+                'Evitar el contacto de alimentos con objetos no comestibles.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Cocinar alimentos a altas temperaturas.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 8,
+          texto:
+            'Una característica importante al seleccionar productos lácteos es:',
+          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Textura jugosa.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Color brillante.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Fecha de vencimiento vigente.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Olor a leche fresca.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 9,
+          texto:
+            '¿Qué indica la fecha de vencimiento en un producto alimenticio?',
+          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'El día en que el producto fue fabricado.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'La última fecha en que el producto será seguro para consumir.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'El inicio de la vida útil del producto.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'El periodo recomendado para el almacenamiento.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 10,
+          texto: '¿Qué es un alimento adulterado?',
+          imagen: require('@/assets/curso/banner-princiapal.svg'),
+          opciones: [
+            {
+              id: 'a',
+              texto:
+                'Alimento que contiene sustancias dañinas en cantidades no permitidas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Alimento con microorganismos patógenos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto:
+                'Alimento al que se le han reemplazado parte de los elementos propios por otras sustancias no autorizadas.',
               esCorrecta: true,
             },
             {
               id: 'd',
               texto:
-                'La velocidad total del proyectil lanzado a 45 grados en el punto más alto de su trayectoria será la misma que la velocidad horizontal del proyectil lanzado horizontalmente en cualquier punto de su trayectoria.',
+                'Alimento que sufre cambios en sus propiedades por causas físicas o biológicas.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto:
-            '¡Perfecto! Has seleccionado la respuesta correcta.',
-          mensaje_incorrecto: 'Esa no es la respuesta correcta. ¡Ánimo!',
-        },
-        {
-          id: 3,
-          texto: 'Texto de la tercera pregunta 3',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
-          opciones: [
-            { id: 'a', texto: 'Opción A', esCorrecta: false },
-            { id: 'b', texto: 'Opción B', esCorrecta: false },
-            { id: 'c', texto: 'Opción C', esCorrecta: false },
-            { id: 'd', texto: 'Opción D', esCorrecta: true },
-          ],
-          mensaje_correcto: '¡Muy bien! Esa es la respuesta correcta.',
-          mensaje_incorrecto: 'Respuesta incorrecta. ¡Inténtalo de nuevo!',
-        },
-        {
-          id: 4,
-          texto: 'Texto de la cuarta pregunta 4',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
-          barajarRespuestas: true,
-          opciones: [
-            { id: 'a', texto: 'Opción A', esCorrecta: true },
-            { id: 'b', texto: 'Opción B', esCorrecta: false },
-            { id: 'c', texto: 'Opción C', esCorrecta: false },
-            { id: 'd', texto: 'Opción D', esCorrecta: false },
-          ],
-          mensaje_correcto: '¡Respuesta correcta! Felicidades.',
-          mensaje_incorrecto: 'Respuesta incorrecta. Intenta nuevamente.',
-        },
-        {
-          id: 5,
-          texto: 'Texto de la quinta pregunta 5',
-          imagen: require('@/assets/curso/banner-princiapal.svg'),
-          opciones: [
-            { id: 'a', texto: 'Opción A', esCorrecta: false },
-            { id: 'b', texto: 'Opción B', esCorrecta: true },
-            { id: 'c', texto: 'Opción C', esCorrecta: false },
-            { id: 'd', texto: 'Opción D', esCorrecta: false },
-          ],
-          mensaje_correcto: '¡Respuesta correcta! Felicidades.',
-          mensaje_incorrecto: 'Respuesta incorrecta. Intenta nuevamente.',
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
         },
       ],
       mensaje_final_aprobado:
-        '¡Has completado el cuestionario exitosamente! Felicidades.',
+        '¡Excelente! Te felicito, has superado la actividad.',
       mensaje_final_reprobado:
-        'No has alcanzado la puntuación mínima para aprobar. Te animamos a intentarlo de nuevo.',
+        'Te recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
     },
   }),
   computed: {},
