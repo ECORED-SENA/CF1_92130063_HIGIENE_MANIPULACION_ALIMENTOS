@@ -216,7 +216,7 @@
             
             p.mb-0(data-aos="fade") A continuación, se detallan estos tipos de contaminación y las medidas necesarias para evitar que los alimentos se vean afectados, asegurando así la protección de los consumidores y el mantenimiento de estándares de higiene adecuados.
 
-          .col-lg-3(data-aos="fade-left")
+          .col-lg-3.d-none.d-lg-block(data-aos="fade-left")
             figure
               img.mx-auto(src="@/assets/curso/temas/19.svg",style="max-width: 295px;")
         

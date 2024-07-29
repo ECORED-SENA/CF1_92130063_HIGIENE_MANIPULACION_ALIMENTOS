@@ -120,9 +120,9 @@ export default {
     {
       tema: 'Selección de alimentos frescos y de calidad',
       referencia:
-        'Converxus (2023). Clasificación de Calidad en los alimentos [Archivo de video] Youtube.',
+        'Mundo Agroindustrial (2016). Control de calidad de alimentos - Garantía para el consumidor. [Archivo de video] Youtube.',
       tipo: 'Video',
-      link: 'https://youtu.be/1tjszZPcYHI?feature=shared',
+      link: 'https://www.youtube.com/watch?v=OMa_7rCqLlc',
     },
     {
       tema: 'Selección de alimentos frescos y de calidad',
@@ -163,7 +163,7 @@ export default {
     },
     {
       termino: 'ETA',
-      significado: 'Enfermedades Transmitidas por Alimentos.',
+      significado: '<span style="text-transform: capitalize;">Enfermedades</span> Transmitidas por Alimentos.',
     },
     {
       termino: 'Inocuidad de los alimentos',
@@ -227,7 +227,7 @@ export default {
       autores: [
         {
           nombre: 'Milady Tatiana Villamil Castellanos',
-          cargo: 'Líder del Ecosistema',
+          cargo: 'Responsable del Ecosistema',
           centro: 'Dirección General',
         },
         {
@@ -270,6 +270,11 @@ export default {
     {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
+        {
+          nombre: 'Luis Gabriel Urueta Alvarez',
+          cargo: 'Validador de Recursos Educativos Digitales',
+          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+        },
         {
           nombre: 'Margarita Marcela Medrano Gómez',
           cargo: 'Evaluador para Contenidos Inclusivos y Accesibles',
