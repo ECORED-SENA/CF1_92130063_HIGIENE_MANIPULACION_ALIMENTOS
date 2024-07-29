@@ -163,7 +163,8 @@ export default {
     },
     {
       termino: 'ETA',
-      significado: '<span style="text-transform: capitalize;">Enfermedades</span> Transmitidas por Alimentos.',
+      significado: 
+        '<span style="text-transform: capitalize;">Enfermedades</span> Transmitidas por Alimentos.',
     },
     {
       termino: 'Inocuidad de los alimentos',
