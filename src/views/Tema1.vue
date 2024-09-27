@@ -117,7 +117,9 @@
           SlyderA.slider-personalizado-1.pt-lg-2(tipo="b")
             .row.justify-content-center.mb-2
               .col-lg-6.mb-4.mb-lg-0
-                h4.mb-5 Definición
+                .titulo-sexto.color-acento-contenido
+                  h5 Tabla 1.
+                  span Definición
                 .tabla-a.color-acento-contenido
                   table(style="min-width: 350px;")
                     thead
@@ -133,7 +135,9 @@
                   img.mx-auto(src="@/assets/curso/temas/14.png",style="max-width: 424px;")
             .row.justify-content-center.mb-2
               .col-lg-6.mb-4.mb-lg-0
-                h4.mb-5 Causantes
+                .titulo-sexto.color-acento-contenido
+                  h5 Tabla 2.
+                  span Causantes
                 .tabla-a.color-acento-contenido
                   table(style="min-width: 350px;")
                     thead
@@ -149,7 +153,9 @@
                   img.mx-auto(src="@/assets/curso/temas/15.png",style="max-width: 424px;")
             .row.justify-content-center.mb-2
               .col-lg-6.mb-4.mb-lg-0
-                h4.mb-5 Visibilidad
+                .titulo-sexto.color-acento-contenido
+                  h5 Tabla 3.
+                  span Visibilidad
                 .tabla-a.color-acento-contenido
                   table(style="min-width: 350px;")
                     thead
@@ -165,7 +171,9 @@
                   img.mx-auto(src="@/assets/curso/temas/16.png",style="max-width: 424px;")
             .row.justify-content-center.mb-2
               .col-lg-6.mb-4.mb-lg-0
-                h4.mb-5 Ejemplos
+                .titulo-sexto.color-acento-contenido
+                  h5 Tabla 4.
+                  span Ejemplos
                 .tabla-a.color-acento-contenido
                   table(style="min-width: 350px;")
                     thead
@@ -181,7 +189,9 @@
                   img.mx-auto(src="@/assets/curso/temas/17.png",style="max-width: 424px;")
             .row.justify-content-center.mb-2
               .col-lg-6.mb-4.mb-lg-0
-                h4.mb-5 Consecuencias
+                .titulo-sexto.color-acento-contenido
+                  h5 Tabla 5.
+                  span Consecuencias
                 .tabla-a.color-acento-contenido
                   table(style="min-width: 350px;")
                     thead

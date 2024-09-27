@@ -203,13 +203,12 @@ export default {
       referencia:
         'Martínez-Martínez, L., & Valdivia-Flores, A. G. (2023). Contaminación de alimento comercial seco para perro por Aspergillus flavus y aflatoxinas en Aguascalientes, México. <em>Revista mexicana de ciencias pecuarias</em>, 14(4), 796-806. Recuperado de',
       link:
-        'https://www.scielo.org.mx/scielo.php?pid=S2007-11242023000400796&script=sci_arttext',
+        'https://cienciaspecuarias.inifap.gob.mx/index.php/Pecuarias/article/view/6397',
     },
     {
       referencia:
         'Rueda, K., Trujillo, J. E., Carranza, J. C., & Vallejo, G. A. (2014). Transmisión oral de Trypanosoma cruzi: una nueva situación epidemiológica de la enfermedad de Chagas en Colombia y otros países suramericanos. <em>Biomédica</em>, 34(4), 632-645.',
-      link:
-        'http://www.scielo.org.co/scielo.php?pid=S0120-41572014000400017&script=sci_arttext',
+      link: 'https://pesquisa.bvsalud.org/portal/resource/pt/lil-730947',
     },
     {
       referencia:
