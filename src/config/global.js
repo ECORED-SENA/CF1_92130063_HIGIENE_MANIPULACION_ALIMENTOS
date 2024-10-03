@@ -104,35 +104,35 @@ export default {
   },
   complementario: [
     {
-      tema: 'Los alimentos',
+      tema: 'Los alimentos.',
       referencia:
         'Alimentos Cloud (s.f.). Contaminación alimentaria: causas y prevención. Curso de Manipulador de Alimentos. [Podcast]. YouTube.',
-      tipo: 'Podcast',
+      tipo: 'Podcast.',
       link: 'https://music.youtube.com/watch?v=5aKkZWhlOHA&feature=shared',
     },
     {
-      tema: 'Tipos de contaminación en alimentos',
+      tema: 'Tipos de contaminación en alimentos.',
       referencia:
         'Fundación Aprende con Reyhan (2020). Contaminación cruzada. [Archivo de video] Youtube.',
       tipo: 'Video',
       link: 'https://youtu.be/L-cdpFWRG2o?feature=shared',
     },
     {
-      tema: 'Selección de alimentos frescos y de calidad',
+      tema: 'Selección de alimentos frescos y de calidad.',
       referencia:
         'Mundo Agroindustrial (2016). Control de calidad de alimentos - Garantía para el consumidor. [Archivo de video] Youtube.',
       tipo: 'Video',
       link: 'https://www.youtube.com/watch?v=OMa_7rCqLlc',
     },
     {
-      tema: 'Selección de alimentos frescos y de calidad',
+      tema: 'Selección de alimentos frescos y de calidad.',
       referencia:
         'Mathias-Rettig, K., & Ah-Hen, K. (2014). El color en los alimentos un criterio de calidad medible. Agro Sur, 42(2), 57-66.',
       tipo: 'Artículo',
       link: 'http://revistas.uach.cl/pdf/agrosur/v42n2/art07.pdf',
     },
     {
-      tema: 'Selección de alimentos frescos y de calidad',
+      tema: 'Selección de alimentos frescos y de calidad.',
       referencia:
         'ONU. (2012). Sistemas de calidad e inocuidad de los alimentos - manual de capacitación. Capítulo 1: ( ed.). D - FAO.',
       tipo: 'Manual',
