@@ -131,14 +131,6 @@ export default {
       tipo: 'Artículo',
       link: 'http://revistas.uach.cl/pdf/agrosur/v42n2/art07.pdf',
     },
-    {
-      tema: 'Selección de alimentos frescos y de calidad.',
-      referencia:
-        'ONU. (2012). Sistemas de calidad e inocuidad de los alimentos - manual de capacitación. Capítulo 1: ( ed.). D - FAO.',
-      tipo: 'Manual',
-      link:
-        'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/66056',
-    },
   ],
   glosario: [
     {
